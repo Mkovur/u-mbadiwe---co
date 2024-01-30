@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>anime.js</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+  .bigger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+    .big{
+        position: relative;
+        min-width: 400px;
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+   .element{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color:  rgb(1, 6, 27);
+    background-image:  linear-gradient(to right, rgb(6, 6, 19), rgb(0, 14, 63));
+    scale: 0.75;
+   }
+
+    </style>
+</head>
+<body>
+
+    <div class="bigger">
+        <div class="big">
+            
+        </div>
+       </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+     integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+let big = document.querySelector('.big');
+
+for (let i = 1; i <= 100; i++) {
+    let dot = document.createElement('div');
+    dot.classList.add("element");
+    big.appendChild(dot);
+}
+
+let dotAll = document.querySelectorAll('.element');
+
+let animation = anime.timeline({
+    targets: dotAll,
+    easing: 'easeInOutExpo',
+    loop: true,
+    delay: anime.stagger(100, { grid: [10, 10], from: 'center' })
+})
+
+animation
+    .add({
+        rotateZ: 180,
+        translateY: anime.stagger(-20, { grid: [10, 10], from: 'center', axis:'y' }),
+        translateX: anime.stagger(-20, { grid: [10, 10], from: 'center', axis:'x' }),
+        opacity:1,
+    })
+    .add({
+        borderRadius:50,
+    })
+    .add({
+        scale: 0.2,
+        opacity:0.2,
+    })
+    animation
+    .add({
+        rotateZ: 180,
+        translateY: anime.stagger(0, { grid: [10, 10], from: 'center', axis:'y' }),
+        translateX: anime.stagger(0, { grid: [10, 10], from: 'center', axis:'x' }),
+        opacity:1,
+    })
+    .add({
+        scale: 1,
+       borderRadius:0.,
+    })
+    .add({
+      rotateZ:90,
+    })
+
+</script>
+
+
+
+
+<div class="second-home-box">
+                   
+                   
+    <p><h3>We are a law firm that provides<br> legal
+        services to clients in the<br> following areas of 
+        practice:</h3></p>
+         <ul class="move-to">
+        <li><a href="#"><li>Criminal Law</li></a></li>                                             
+        <li><a href="#">Family Law</a></li>                                          
+        <li><a href="#">Commercial Law</a></li>                     
+        <li><a href="#">Property Law</a></li>                     
+        <li><a href="#">Taxation Law</a></li>                     
+        <li><a href="#">Employment Law</a></li>                     
+        <li><a href="#">Inheritance Law</a></li>                     
+        <li><a href="#">Bankruptcy and Insolvency Law</a></li>                     
+        <li><a href="#">Immigration Law</a></li>                     
+        <li><a href="#">Divorce Proceedings</a></li>                     
+        <li><a href="#">Litigation Services</a></li>                     
+        <li><a href="#">Probate and Wills Registration</a></li>                     
+        <li><a href="#">Notary Public Services</a></li>                     
+        <li><a href="#">Dispute Resolution Services</a></li>                     
+        <li><a href="#">Legal Advisory Services</a></li>                     
+        <li><a href="#">Mediation Services</a></li>                     
+        <li><a href="#">Company Secretarial Services</a></li>                                       
+        <li><a href="#">International Trade Law</a></li>                     
+        <li><a href="#">Corporate Governance Law</a></li>                     
+        <li><a href="#">Arbitration Services</a></li>                     
+        <li><a href="#">Construction Law</a></li>                     
+        <li><a href="#">Environmental Law</a></li>                     
+        <li><a href="#">Education Law</a></li>                     
+        <li><a href="#">Human Rights Law</a></li>                     
+        <li><a href="#">Labour Law</a></li>                     
+        <li><a href="#">Maritime Law</a></li>                     
+        <li><a href="#">Real Estate Law</a></li>                     
+        <li><a href="#">Trade Union Law</a></li>                     
+        <li><a href="#">Transport Law</a></li>                     
+        <li><a href="#">Aviation Law</a></li>                     
+            
+            
+           
+             
+            
+           
+             </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

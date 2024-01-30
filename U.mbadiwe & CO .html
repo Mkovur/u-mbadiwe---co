@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>U.mbadiwe & CO.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="jquery.js"></script>
+    <script src="index001.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="U.mbadiwe & CO .css">
+   
+    <style>
+  .coverall{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+    </style>
+</head>
+<body>
+  
+    <script>
+/*
+const time = new Date().getHours();
+
+const openingTime = 7;
+const closingTime = 18;
+
+if ( time >= openingTime && time < closingTime ) {
+           
+               alert('We are open for business')
+          
+        }else if ( time >= closingTime || time < openingTime) {
+            
+               alert('This business is currently close for the day')
+           
+        }
+
+*/
+    </script>
+    <!--header for laptop-->
+        <div class="head">
+            <div class="left-head">
+                <img src="l-j.png">
+            </div>
+
+            <div class="right-head">
+                <ul>
+                    <li> <a href="U.mbadiwe & CO .html">HOME</a> </li> 
+                    <li> <a href="service.html">SERVICE</a> </li>
+                    <li> <a href="About.html">ABOUT US</a> </li>
+                    <li> <a href="form.html">CONTACTS </a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--header for tablet and phone-->
+ 
+    <div class="forup"> 
+         <div class="forupleft">
+            <img src="l-j.png">
+         
+         </div>
+         <div class="forupright">
+            <div class="menu-phone">
+                <img src="menu.png"  id="whenalist" style="width: 30px; aspect-ratio: 1;">
+               <div class="hmm">
+                
+                <ul id="displaythis">
+                    <i class="fa fa-close" id="removemenu" style="font-size:24px; color: white;"></i>
+                    <li><a href="U.mbadiwe & CO .html"> Home </a></li>
+                    <li><a href="About.html">About Us </a></li>
+                    <li><a href="service.html"> Services</a></li>
+                    <li><a href="form.html"> Contacts Us</a></li>
+                </ul>
+               </div>
+             </div>
+
+         </div>
+
+    </div>  
+
+<!--top home body contents-->
+
+ 
+ <div class="coverall">
+    <div class="home-background">  
+
+        <div class="vid">
+                
+        <video src="handshake.mp4"   autoplay loop muted plays-inline  class="videoback">
+        
+        </video>
+        
+        </div>
+        
+        <div class="middle">
+            <div class="first"><h1> U<span>.MBADIWE & C</span>o.</h1></div>
+            <div class="follow">
+                <h5>Looking for a wizard who can solve a problem you don't know you have in a way you don't understand?</h5>
+            </div>
+        </div>
+           <div class="lawyer">
+            <button class="button1" style="vertical-align:middle ;"><span><a href="form.html">Need a lawyer</a></span></button>
+           </div>
+        </div>
+ </div>
+
+<!--animation script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+let big = document.querySelector('.big');
+
+for (let i = 1; i <= 100; i++) {
+let dot = document.createElement('div');
+dot.classList.add("element");
+big.appendChild(dot);
+}
+
+let dotAll = document.querySelectorAll('.element');
+
+let animation = anime.timeline({
+targets: dotAll,
+easing: 'easeInOutExpo',
+loop: true,
+delay: anime.stagger(100, { grid: [10, 10], from: 'center' })
+})
+
+animation
+.add({
+   rotateZ: 180,
+   translateY: anime.stagger(-20, { grid: [10, 10], from: 'center', axis:'y' }),
+   translateX: anime.stagger(-20, { grid: [10, 10], from: 'center', axis:'x' }),
+   opacity:1,
+})
+.add({
+   borderRadius:50,
+})
+.add({
+   scale: 0.2,
+   opacity:0.2,
+})
+animation
+.add({
+   rotateZ: 180,
+   translateY: anime.stagger(0, { grid: [10, 10], from: 'center', axis:'y' }),
+   translateX: anime.stagger(0, { grid: [10, 10], from: 'center', axis:'x' }),
+   opacity:1,
+})
+.add({
+   scale: 1,
+  borderRadius:0.,
+})
+.add({
+ rotateZ:90,
+})
+
+</script>
+<!--home second layout -->
+
+           <div class="second-home">
+            <div class="second-right">
+                <p>
+                 <h2>  welcome to u.mbadiwe & co </h2>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Est distinctio modi consequatur fugiat, at nam necessit<br>
+                    atibus nulla impedit ipsa sunt quae enim reprehenderit,<br>
+                  corporis, amet hic. Nam ea adipisci recusandae? <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                   Repudiandae id voluptatibus alias ipsum similique sint sunt<br>
+                    odio, 
+                  reprehenderit, quod enim<br>
+                   <h3>Great Lorem ipsum dolor sit amet.</h3>
+                   sapiente facere fugiat dolore. Ipsa sint earum odio magni<br> 
+                   facilis!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Modi i
+                   n error quo cum atque facere, ut repudiandae <br>reiciendis quae dolores
+                    quisquam numquam quaerat quod! Officia<br>
+                    necessitatibus similique adipisci quos! Aperiam?
+                   <h4>Active team ipsum dolor sit amet.</h4>
+                   sapiente facere fugiat dolore. Ipsa sint earum odio magni<br> 
+                   facilis!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Modi i
+                   n error quo cum atque facere, ut repudiandae <br>reiciendis quae dolores
+                    quisquam numquam quaerat quod! Officia<br>
+                    necessitatibus similique adipisci quos! Aperiam?
+                </p>
+                    </div>
+            <div class="second-home-box">
+                   
+                   
+                <p><h3>We are a law firm that provides<br> legal
+                    services to clients in the<br> following areas of 
+                    practice:</h3></p>
+                     <ul class="move-to">
+                        <li><a href="#005">Property Law</a></li>      
+                        <li><a href="">Real Estate and Property Management</a></li> 
+                        <li><a href="">Debt recovery Law</a></li>                                                 
+                    <li><a href="#004">Commercial Law</a></li>                     
+                                  
+                    <li><a href="#006">Taxation Law</a></li>                     
+                    <li><a href="#007">Employment Law</a></li>                     
+                    <li><a href="#008">Regulatory Consultant</a></li>                     
+                    <li><a href="#0010">Bankruptcy and Insolvency Law</a></li>                     
+                    <li><a href="">Immigration Law</a></li>  
+                    <li><a href="">Criminal Law</a></li>                      
+                    <li><a href="">Patent Law</a></li>                          
+                    <li><a href="#0012">Civil Law</a></li>
+
+                    <li><a href="#0012">Private International Law</a></li>                          
+                    <li><a href="#0012">Lottery Law</a></li>
+
+                    
+                         </ul>
+                    </div>
+            </div>
+  
+   
+
+   <!--third layout-->
+<div class="third">
+   <marquee behaviour="" scrollamount="1" direction="down"> <h1 style="text-align: center; color: rgb(166, 0, 0);">U. MBADIWE & CO.</h1></marquee>
+  <div class="third-layout">
+   
+    <div class="third-layout-left">
+        <img src="law5.jpeg">
+    </div>
+
+    <div class="third-layout-right">
+        <h1></h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit<br>
+            this is just Lorem ipsum dolor sit amet consectetur adipisicing.<br>
+            the best deals on distressed, affordable, and also high-<br>
+            end real estate for our clients. We are also a<br>
+            Construction Company. Our Business Services include<br>
+            Transportation & Logistics Services. Information<br>
+            Technology Services and Business Development &<br>
+            Consulting Services which we provide to individuals,<br> 
+            local & international businesses, and organizations.</p>
+    </div>
+  </div>
+
+  </div>
+
+
+  
+
+
+
+
+
+  <footer>
+    
+    <div class="connect-us">
+        <h2>Connect with us:</h2>
+        <ul class="form-list"> 
+            <li><a href="https://web.facebook.com/pages/create/?ref_type=registration_form"> <i class="fa fa-facebook-square" style="font-size:30px; color: white;"></i> </a></li>
+            <li><a href="https://www.instagram.com/accounts/emailsignup/"> <i class="fa fa-instagram" style="font-size:30px; color: white;"></i> </a></li>
+            <li><a href="https://www.linkedin.com/signup/cold-join"> <i class="fa fa-linkedin" style="font-size:30px; color: white;"></i> </a></li>
+            <li><a href="ms-windows-store://pdp/?productid=9NKSQGP7F2NH&mode=mini&cid=www_test"> <i class="fa fa-whatsapp" style="font-size:30px; color: white;"></i> </a></li>
+            <li><a href="form.html">  <i class="fa fa-envelope" style="font-size:30px; color: white;"></i> </a></li>
+        </ul>
+    </div>
+    
+ <div class="address-loc">
+     
+  <div class="the-last ">
+    <div class="map">
+  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3580985663716!2d3.6011792735879813!3d6.4762466237135685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf90a31933459%3A0xcf3681afeb7f349c!2sMike%20Oghene!5e0!3m2!1sen!2sng!4v1700178858228!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+
+    <div>
+      <li><a href="#">  </a></li>
+      <p> 
+          <i class="fa fa-map-marker" style="font-size:30px; color:red;"></i>Mike Oghene, Chief Meme Otone Road, Eti-Osa, Lekki, Nigeria.
+       </p>
+     </div>
+  
+    
+
+
+  </div>
+   
+
+    
+ 
+  </div>
+
+</footer>
+
+
+</body>
+</html>

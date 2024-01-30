@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(193, 212, 223);
+}
+body{
+    background-color: blue;
+    background-image:  linear-gradient(to  right, rgb(17, 17, 17), rgb(2, 18, 71));
+    
+    }
+
+    .first-background{
+        height: 100vh;
+        background-image: url("background4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: good;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        position: relative;
+    
+    }
+    @keyframes good {
+        10%{background-image: url("background4.jpg");}
+        50%{background-image: url("background1.jpg");}
+        50%{background-image: url("background5.jpg");}
+       
+    }
+    .up{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 48px;
+        position: fixed;                                                                                                                                                                                                                                                                                                                                                                                          
+        padding: 16px ;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        outline: none;
+
+    }
+    .num{
+        padding: 14px;
+    }
+.nav-bar>ul li{
+    list-style-type: none;
+    display: inline;
+    border: solid 2px white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.nav-bar>ul li:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: black ;
+    
+}
+.nav-bar>ul li a{
+text-decoration: none;
+color: rgb(193, 212, 223);
+font-size: 13px;
+font-weight: 800;
+
+}
+#dif{
+    background-color: rgba(255, 255, 255, 0.25);
+    
+}
+.cha{
+    color: brown;
+}
+
+.links{
+    display: flex;
+    margin-top: 48px;
+    outline: none;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 50px;
+    padding: 16px;
+    width: 100%;
+
+}
+.maq>marquee{
+    font-size: 30px;
+    text-align: center;
+    padding: 16px;
+}
+
+.header-welcome {
+    animation: blinker 5s linear infinite;
+    color: rgba(199, 192, 192, 0.664);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.new{
+    display: flex;
+  justify-content: center;
+   align-items: center;
+   background-color: black;
+   padding: 16px;
+   font-size: 19px;
+   width: 900px;
+   border-radius: 6px;
+   position: relative;
+   top: 130px;
+
+}
+.new1 > div span{
+    padding: 12px;
+    padding-right: 20px;
+    height: 50px;
+    margin-bottom: 28px;
+    display: block;
+    font-size: 22px;
+    font-weight: 900;
+}
+.new1{
+    overflow: hidden;
+    height: 50px;
+   
+
+}
+
+.new1 div:first-child{
+    animation: slide 10s linear infinite;
+
+}
+
+@keyframes slide {
+    0%{
+        margin-top: -240px ;
+        
+    }
+    5%{
+        margin-top: -160px;
+    }
+    35%{
+        margin-top: -160px ;
+    
+    }
+    40%{
+        margin-top: -80px ;
+        
+    }
+    65%{
+        margin-top: -80px ;
+        
+    }
+    70%{
+        margin-top: 0px ;
+        
+    }
+    99%{
+        margin-top: 0px ;
+        
+    }
+    100%{
+        margin-top: -240px ;
+    
+    }
+
+}
+
+.second-background{
+    height: 100vh;
+    background-image: url("practice_area.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
